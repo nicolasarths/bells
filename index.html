@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bell's</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="icon" src="location-icon.svg" />
+        <h3>Alvorada, RS</h3>
+      </nav>
+      <img id="logo" src="logo.png" />
+    </header>
+    <main>
+      <p>
+        epilação,<br />
+        cílios,<br />
+        sobrancelha,<br />
+        banho de lua, <br />argiloterapia
+      </p>
+    </main>
+    <a href="https://wa.me/5551991621074">
+      <div class="contato bg-main">Contatar</div>
+    </a>
+
+    <script>
+      const logo = document.querySelector("#logo");
+      if (screen.width >= 700) logo.src = "logo-big.png";
+      else logo.src = "logo.png";
+    </script>
+  </body>
+</html>
