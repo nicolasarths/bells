@@ -32,13 +32,17 @@
     </a>
 
     <script>
+      const logo = document.querySelector("#logo");
       const changeLogo = () => {
-        const logo = document.querySelector("#logo");
-        if (screen.width >= 700) logo.src = "logo-big.png";
+        if (screen.width >= 750) logo.src = "logo-big.png";
         else logo.src = "logo.png";
       };
 
-      window.addEventListener("resize", changeLogo());
+      window.addEventListener("resize", () => {
+        console.log("window being resized");
+        changeLogo();
+      });
+
       window.onload(changeLogo());
     </script>
   </body>
