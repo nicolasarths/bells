@@ -32,8 +32,11 @@
 
     <script>
       const logo = document.querySelector("#logo");
-      if (screen.width >= 700) logo.src = "logo-big.png";
-      else logo.src = "logo.png";
+
+      window.addEventListener("resize", () => {
+        if (screen.width >= 700) logo.src = "logo-big.png";
+        else logo.src = "logo.png";
+      });
     </script>
   </body>
 </html>
